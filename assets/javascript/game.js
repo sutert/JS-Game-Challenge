@@ -32,13 +32,23 @@ let teamTwoGoalCount =0;
         }
     })
 
-let resetButton = document.querySelector("#reset")
-        //console.log(resetButton)
-let numResetsCount = document.querySelector("#num-resets")
-    let numReset =0
+let resetButtonElement = document.querySelector("#reset")
+let numResetsCountElement = document.querySelector("#num-resets")
+let numResetsCount = 0;   
 
-    numResetsCount.addEventListener("click", function(){
-        teamTwoShotCount = teamTwoShotCount + 1   
-        teamTwoShotCountElement.innerHTML = teamTwoShotCount       
+    resetButtonElement.addEventListener("click", function(){
+        numResetsCount = numResetsCount + 1   
+        numResetsCountElement.innerHTML = numResetsCount
+
+        teamOneShotCount = 0
+        teamOneShotCountElement.innerHTML = teamOneShotCount
+        teamOneGoalCount =0;
+        teamOneGoalCountElement.innerHTML = teamOneGoalCount
+
+        teamTwoShotCount = 0;
+        teamTwoShotCountElement.innerHTML = teamTwoShotCount
+        teamTwoGoalCount =0;
+        teamTwoGoalCountElement.innerHTML = teamTwoGoalCount
+
         
 })
