@@ -50,5 +50,5 @@ let numResetsCount = 0;
         teamTwoGoalCount =0;
         teamTwoGoalCountElement.innerHTML = teamTwoGoalCount
 
-        
+      //test  
 })
